@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Guess The Word</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row row1">
+                <h3><center><b> Guess The Word </b></center></h3>
+            </div>
+            <div class="row row2">
+              <div class="row">
+                <div class="col-lg-3">
+                    <div class="row">
+                        <div class="col-sm-8"><b>Right Guess :-</b></div>
+                        <div class="col-sm-4" id="Rguess"><p>0</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8"><b>HighScore :-</b></div>
+                        <div class="col-sm-4" id="highscore"><p>0</p></div>
+                    </div>
+                </div>
+                <div class="col-lg-6"></div>
+                <div class="col-lg-3">
+                    <div class="row">
+                        <div class="col-sm-6"><center><button type="button" id="restart" class="btn btn-danger">Play Again</button></div>
+                        <div class="col-sm-6"><button type="button" id="Next" class="btn btn-warning">Next</button></center></div>  
+                    </div>
+                </div>
+            </div>
+            <div class="row row3">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <div class="col-sm-3 cols">
+                            <div class="row subrow1">
+                                <input id="ip1" type="text" class="input" placeholder="A-Z" maxlength="1" pattern="[A-Z]">
+                                <p>     </p>
+                            </div>
+                            <div class="row subrow2">
+                                
+                                <button type="button" id="btn1" class="btn btn-primary">confirm</button>
+                            </div>
+                            <div class="row subrow3">
+                                <p>         </p>
+                                <span id="badge1" class="badge badge-danger">Status</span>
+                            </div>                  
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3 cols">                       
+                        <div class="row subrow1">
+                            <input type="text" id="ip2" class="input" placeholder="A-Z" maxlength="1" pattern="[A-Z]">
+                            <p>     </p>
+                        </div>
+                        <div class="row subrow2">
+                            
+                            <button type="button"  id="btn2" class="btn btn-primary">confirm</button>
+                        </div>
+                        <div class="row subrow3">
+                            <p>         </p>
+                            <span id="badge2" class="badge badge-danger">Status</span>
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3 cols">
+                        
+                        <div class="row subrow1">
+                            <input type="text" id="ip3" class="input" placeholder="A-Z" maxlength="1" pattern="[A-Z]">
+                            <p>     </p>
+                        </div>
+                        <div class="row subrow2">
+                            
+                            <button type="button" id="btn3" class="btn btn-primary">confirm</button>
+                        </div>
+                        <div class="row subrow3">
+                            <p>         </p>
+                            <span id="badge3" class="badge badge-danger">Status</span>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="row"><center><h4>Warnings here!!!</h4></center></div>
+                    <div class="row">
+                        <div class="col-sm-12"><span><center><mark id="warnings">......</mark></center></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <center><h3><b>HINT :-</b></h3></center>
+                    </div>
+                    <div class="row">
+                        <center><span><h4 id="hint">HINT</h4></span></center>
+                    </div>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+         
+    </body>
+    <script src="script.js"></script>
+</html>
